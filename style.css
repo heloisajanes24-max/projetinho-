@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Fredoka', sans-serif;
-    background: #f5fff0;
+    background: #D29A89;
     color: #2e2e2e;
     scroll-behavior: smooth;
 }
@@ -28,7 +28,7 @@ header {
 .logo {
     font-size: 20px;
     font-weight: bold;
-    color: #ff7b00;
+    color: #d5b86a;
 }
 
 nav a {
@@ -40,7 +40,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff7b00;
+    color: #BB8F8C;
 }
 
 /*HERO*/
@@ -55,13 +55,27 @@ nav a:hover {
 
     position: relative;
     text-align: center;
-    color: white;
+    color: #E8E7DD;
     overflow: hidden;
 }
 
 .hero-texto h1 {
     font-size: 60px;
-    animation: aparecer 1s ease;
+    animation: aparecer 1s ease, glow 2.5s ease-in-out infinite;
+    color: #fff7e6;
+}
+
+/* brilho suave */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ffb6c1, 0 0 10px #ffb6c1;
+    }
+    50% {
+        text-shadow: 0 0 15px #ffd1dc, 0 0 25px #ffb6c1;
+    }
+    100% {
+        text-shadow: 0 0 5px #ffb6c1, 0 0 10px #ffb6c1;
+    }
 }
 
 .hero-texto p {
@@ -76,7 +90,7 @@ nav a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background: #ff7b00;
+    background: #BB8F8C;
     color: white;
     border-radius: 30px;
     text-decoration: none;
@@ -86,7 +100,7 @@ nav a:hover {
 
 .botao:hover {
     transform: scale(1.1);
-    background: #ff9a3c;
+    background: #BB8F8C;
 }
 
 /*FRUTAS FLUTUANDO*/
@@ -214,7 +228,7 @@ nav a:hover {
 
 /*FOOTER*/
 .footer {
-    background: #2e7d32;
+    background: #b1d0dd;
     color: white;
     padding: 30px;
 }
